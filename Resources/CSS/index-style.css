@@ -10,6 +10,9 @@ ol, ul {
   margin: 0;
   padding: 0;
 }
+.not-ready {
+	display: none;
+}
 #navigation li {
 	display: inline-block;
 }
