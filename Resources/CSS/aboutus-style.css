@@ -1,0 +1,38 @@
+@font-face {
+	font-family: Truculenta;
+	src: url(../Fonts/Truculenta/static/Truculenta_72pt-Bold.ttf);
+}
+@font-face {
+	font-family: Lato;
+	src: url(../Fonts/Lato/Lato-Regular.ttf);
+}
+ol, ul {
+  margin: 0;
+  padding: 0;
+}
+#navigation li {
+	display: inline-block;
+}
+#navigation ul {
+	margin-top: 16px;
+	margin-bottom: 16px;
+	padding-left: 40px;
+}
+#navigation a {
+	font-family: Lato, sans-serif;
+	text-decoration: none;
+	font-size: 20px;
+	color: white;
+	padding: 5px;
+	margin-right: 10px;
+	background-color: #0b758f; /* a279ed */
+	border-radius: 15px;
+}
+#navigation {
+	padding: 5px;
+	background-color: black;
+	max-width: 1990px; 
+}
+#navigation a:hover {
+	background-color: #00647d;
+}
