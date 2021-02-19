@@ -81,6 +81,7 @@ h3 {
 }
 table {
 	margin: auto;
+	width: auto;
 }
 th, td {
 	border-style: solid;
@@ -99,4 +100,37 @@ th, td {
 }
 .copyright {
 	font-size: 12px;
+}
+td:hover {
+	background-color: #292929;
+}
+th:hover {
+	background-color: #292929;
+}
+#staff-devs {
+	width: auto;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-color: #0b758f;
+	background-color: #1a1a1a;
+}
+#admins {
+	padding-top: 28px;
+	padding-bottom: 28px;
+	border-bottom-style: solid;
+	border-color: #0b758f;
+	background-color: #1a1a1a;
+}
+#social {
+	padding-top: 28px;
+	padding-bottom: 28px;
+	width: auto;
+	background-color: #1a1a1a;
+}
+#admins h3, #social h3 {
+	margin-top: 0;
+	margin-bottom: 0;
+}
+#admins:hover, #staff-devs:hover, #social:hover {
+	background-color: #292929;
 }
