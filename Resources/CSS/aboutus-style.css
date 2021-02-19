@@ -10,6 +10,12 @@ ol, ul {
   margin: 0;
   padding: 0;
 }
+#border {
+	border-width: 3px;
+	border-style: solid;
+	border-color: #0b758f;
+	border-radius: 5px;
+}
 #navigation li {
 	display: inline-block;
 }
@@ -35,4 +41,62 @@ ol, ul {
 }
 #navigation a:hover {
 	background-color: #00647d;
+}
+header {
+	font-family: Truculenta;
+	font-size: 36px;
+	text-align: center;
+}
+body {
+	background-color: #1a1a1a;
+	color: white;
+	font-family: Arial, sans-serif;
+	max-width: 2000px;
+}
+abbr {
+	text-decoration: none;
+}
+h2 {
+	font-family: Truculenta;
+	font-size: 250%;
+	text-align: center;
+}
+h3 {
+	font-family: Truculenta;
+	font-size: 180%;
+	text-align: center;
+}
+#description {
+	width: 400px;
+	background-color: #0b758f;
+	margin: auto;
+	border-radius: 10px;
+	padding: 1px;
+	margin-bottom: 25px;
+	font-size: 1.3em;
+	text-align: center;
+}
+.new-line {
+	white-space: nowrap;
+}
+table {
+	margin: auto;
+}
+th, td {
+	border-style: solid;
+	border-width: 2px;
+	border-color: #0b758f;
+	border-radius: 2px;
+	text-align: center;
+	padding: 10px;
+}
+.underline {
+	text-decoration: underline;
+}
+#jobs p {
+	text-align: center;
+	font-size: 1.3em;
+}
+.copyright {
+	font-size: 12px;
 }
