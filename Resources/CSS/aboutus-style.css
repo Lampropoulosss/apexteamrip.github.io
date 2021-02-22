@@ -88,7 +88,7 @@ h3 {
 }
 table {
 	margin: auto;
-	width: 100%;
+	width: auto;
 }
 th, td {
 	border-style: solid;
