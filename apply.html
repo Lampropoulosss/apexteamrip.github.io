@@ -35,11 +35,83 @@
 				<h1 id="main-heading">RiP Central</h1>
 			</header>
 			<main>
-				<section id="heading-description">
-					<p>Are you interested in applying for a staff position? Fill the following format out and make sure to <span class="underline">read the description and the requirements</span></p>
+				<section>
+					<article id="heading-description">
+						<p>We are glad that you are looking into applying as a Staff Member at RiP Central. Please read the following.</p>
+					</article>
+					<article id="description">
+						<p class="underline">Every Staff Member starts as a Trial Staff Member and then they choose one of the following "Departments": Staff Developers | Admins | Social.</p>
+					</article>
+					<article id="staff-devs">
+						<h2>Staff Department:</h2>
+						<p>Staff Department's or Staff Developer's job is answering tickets and making sure that everyone is following the rules and handle all violation issues. Staff Developers are supposed to be friendly, trustworthy but also hard-working and very active with a goal of making the server a better place for everyone.</p>
+					</article>
+					<article id="admins">
+						<h2>Admin Department</h2>
+						<p>They are responsible for the channels. They organize the Announcements / Polls / Question Of The Day / Patch Notes and give ideas on what we should add / remove. This allow you to be <span class="bold underline">less active</span> than a Staff Developer.</p>
+					</article>
+					<article id="social">
+						<h2>Social Department</h2>
+						<p>Their job is to get partnerships for our server, grow our social media, check each channel for clips and upload some of them to our Official Social Media Accounts.</p>
+					</article>
+					<article id="note">
+						<p>Note: As a Trial Staff Member you'll have 1 month to get promoted. Your job will be to be active and help the other staff members to do they job. If we see that you help we'll give you to choose between which "department" you want to join. If you don't get promoted means that you don't help the server as a staff member (You will be able to apply again after 1 month).</p>
+					</article>
+					<article id="requirements">
+						<h2 class="underline">Requirements:</h2>
+						<ul>
+							<li>Minimum Age of 15</li>
+							<li>English Speaking</li>
+							<li>Be Active</li>
+						</ul>
+					</article>
 				</section>
-				<section class="application-form">
-					<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeN-T4RUbiLOgfpYcRXGFH9Rk55LR4xv7oO1TunZu8dHp0Rlw/viewform?embedded=true" height="1650"frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+				<section id="application-form">
+					<h2>Application Form</h2>
+					<form action="https://formspree.io/f/maylzrwn" method="post">
+						<label for="Email">Email Address</label>
+						<input type="email" name="Email" id="Email" placeholder="example@mail.com" required>
+
+						<label for="Tag">Discord Tag</label>
+						<input type="text" name="Tag" id="Tag" placeholder="Example#1234" required>
+
+						<label for="AccountID">Discord Account ID</label>
+						<input type="text" name="AccountID" id="AccountID" placeholder="Optional">
+
+						<label for="Age">Age</label>
+						<input type="text" name="Age" id="Age" required>
+
+						<label for="Gender">Gender</label>
+						<select id="Gender" name="Gender">
+							<option value="Female">Female</option>
+							<option value="Male">Male</option>
+							<option value="Other">Other</option>
+						</select>
+
+						<label for="OtherLanguages">What other languages do you speak?</label>
+						<input type="text" name="OtherLanguages" id="OtherLanguages" required>
+
+						<label for="Timezone">What is your current timezone?</label>
+						<input type="text" name="Timezone" id="Timezone" placeholder="+2 GMT" required>
+
+						<label for="ApplyReason">Why are you applying as a Staff Member at RiP Central?</label>
+						<textarea id="ApplyReason" name="ApplyReason" placeholder="Write Something..." required></textarea>
+
+						<label for="HoursPerDay">How many hours a day are you able to be online?</label>
+						<input type="text" name="HoursPerDay" id="HoursPerDay" required>
+
+						<label for="PreviousExperience">Do you have any previous experience as a staff member?</label>
+						<input type="text" name="PreviousExperience" id="PreviousExperience" required>
+
+						<label for="WhyShouldWeChooseYou">Why should we choose you, over all the other applicants?</label>
+						<textarea id="WhyShouldWeChooseYou" name="WhyShouldWeChooseYou" placeholder="Write Something..." required></textarea>
+
+						<label for="AnythingElse">Is there anything else you would like to share with us?</label>
+						<textarea id="AnythingElse" name="AnythingElse"></textarea>
+
+						<input type="submit" value="Submit">
+						<input type="reset" value="Reset">
+					</form>
 				</section>
 			</main>
 		</div>
