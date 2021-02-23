@@ -83,7 +83,7 @@ input[type=text], input[type=email], textarea {
 textarea {
 	height: 200px;
 }
-input[type=submit] {
+input[type=submit], input[type=reset] {
   background-color: #0b758f;
   color: white;
   padding: 12px 20px;
