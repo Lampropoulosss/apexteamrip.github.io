@@ -1,0 +1,98 @@
+/* By John Lampropoulos */
+
+@font-face {
+	font-family: Truculenta;
+	src: url(../Fonts/Truculenta/static/Truculenta_72pt-Bold.ttf);
+}
+@font-face {
+	font-family: Lato;
+	src: url(../Fonts/Lato/Lato-Regular.ttf);
+}
+ol, ul {
+  margin: 0;
+  padding: 0;
+}
+.not-ready {
+	display: none;
+}
+#border {
+	border-width: 3px;
+	border-style: solid;
+	border-color: #0b758f;
+	border-radius: 5px;
+}
+#navigation li {
+	display: inline-block;
+}
+#navigation ul {
+	margin-bottom: 16px;
+	padding-left: 40px;
+}
+#navigation a {
+	font-family: Lato, sans-serif;
+	text-decoration: none;
+	font-size: 20px;
+	color: white;
+	 padding: 5px;
+	margin-right: 10px;
+	background-color: #0b758f; /* a279ed */
+	border-radius: 15px;
+}
+@media only screen and (max-width: 537px) {
+	#navigation li {
+		margin-top: 15px;
+	}
+}
+@media only screen and (min-width: 538px) {
+	#navigation ul {
+		margin-top: 16px;
+	}
+}
+#navigation {
+	padding: 5px;
+	background-color: black;
+	max-width: 1990px; 
+}
+#navigation a:hover {
+	background-color: #00647d;
+}
+header {
+	font-family: Truculenta;
+	font-size: 40px;
+	text-align: center;
+}
+body {
+	background-color: #1a1a1a;
+	color: white;
+	font-family: Arial, sans-serif;
+	max-width: 2000px;
+}
+input[type=text], input[type=email], textarea {
+  width: 100%; /* Full width */
+  padding: 12px; /* Some padding */ 
+  border: 2px solid #0b758f; /* Gray border */
+  border-radius: 4px; /* Rounded borders */
+  box-sizing: border-box; /* Make sure that padding and width stays in place */
+  margin-top: 6px; /* Add a top margin */
+  margin-bottom: 16px; /* Bottom margin */
+  resize: none; /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+#contact-form {
+	margin: 0 10px;
+}
+textarea {
+	height: 200px;
+}
+input[type=submit] {
+  background-color: #0b758f;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: Lato;
+  margin-bottom: 20px;
+}
+input[type=submit]:hover {
+	background-color: #00647d;
+}

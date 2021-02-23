@@ -56,7 +56,6 @@ iframe {
 	display: inline-block;
 }
 #navigation ul {
-	margin-top: 16px;
 	margin-bottom: 16px;
 	padding-left: 40px;
 }
@@ -69,6 +68,16 @@ iframe {
 	margin-right: 10px;
 	background-color: #0b758f; /* a279ed */
 	border-radius: 15px;
+}
+@media only screen and (max-width: 537px) {
+	#navigation li {
+		margin-top: 15px;
+	}
+}
+@media only screen and (min-width: 538px) {
+	#navigation ul {
+		margin-top: 16px;
+	}
 }
 #navigation {
 	padding: 5px;

@@ -19,7 +19,6 @@ ol, ul {
 	display: inline-block;
 }
 #navigation ul {
-	margin-top: 16px;
 	margin-bottom: 16px;
 	padding-left: 40px;
 }
@@ -32,6 +31,16 @@ ol, ul {
 	margin-right: 10px;
 	background-color: #0b758f; /* a279ed */
 	border-radius: 15px;
+}
+@media only screen and (max-width: 537px) {
+	#navigation li {
+		margin-top: 15px;
+	}
+}
+@media only screen and (min-width: 538px) {
+	#navigation ul {
+		margin-top: 16px;
+	}
 }
 #navigation {
 	padding: 5px;
@@ -66,24 +75,22 @@ header h1 {
 	font-size: 1.3em;
 	text-align: center;
 	color: black;
-}
-body {
-	font-family: Arial, sans-serif;
-	background-color: #1a1a1a;
-	color: white;
-	max-width: 1990px;
-}
-#description {
-	margin-top: 0px;
-	margin-bottom: 20px;
+	margin-top: 0;
+	margin-bottom: 0;
 	border-top-style: solid;
-	border-bottom-style: solid;
+	border-bottom-style: none;
 	border-color: black;
 	background-color: white;
 	padding: 10px;
 	max-width: 1990px;
 	font-weight: bold;
 	text-decoration: none;
+}
+body {
+	font-family: Arial, sans-serif;
+	background-color: #1a1a1a;
+	color: white;
+	max-width: 1990px;
 }
 abbr {
 	text-decoration: underline;
@@ -94,10 +101,13 @@ abbr {
 h2, h3 {
 	font-family: Truculenta;
 	font-size: 300%;
+	text-align: center;
 }
-#offers h2, .subheader {
+#offers h2 {
 	text-align: center;
 	text-decoration: underline;
+	margin-top: 0;
+
 }
 #offers li {
 	margin: auto;
@@ -113,13 +123,17 @@ h2, h3 {
 }
 #offers {
 	width: 500px;
-	background-color: #0b758f;
+	background-color: rgba(11, 117, 143, 0.6);
 	border-radius: 10px;
 	margin: auto;
 	padding-bottom: 2px;
 	padding-right: 20px;
 	padding-left: 20px;
 	font-size: 1.2em;
+}
+#offers-section {
+	background-image: url(../minecraft.jpg);
+	background-position: center;
 }
 @media only screen and (max-width: 740px) {
 	#offers {
