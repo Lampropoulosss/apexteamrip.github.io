@@ -192,17 +192,37 @@ h2, h3 {
   	border-radius: 7px;
   	background-size: cover;
   	text-align: center;
-  	font-size: 1.125rem;
-  	color: white;
+}
+@media only screen and (max-width: 745px) {
+	#button p {
+		height: 25%;
+		padding-top: 2%;
+		padding-bottom: 9%;
+	}
+}
+@media only screen and (min-width: 1090px) {
+	#button p {
+		padding-top: 1.5%;
+		height: 15%;
+	}
 }
 #button p {
+	width: 80%;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-radius: 10px;
+	margin: 0 auto;
+	background-color: rgba(255, 255, 255, 0.7);
+	position: relative;
+	top: 50px;
+	margin-bottom: 54px;
 	font-family: Arial;
 	font-size: 3em;
 	color: black; /* rgb(116, 148, 237); */
 	font-weight: bold;
 	/* text-indent: -9999px; */
-	margin-top: 1.8em;
-	padding-top: 1.7em;
+	/* margin-top: 1.8em;
+	padding-top: 1.7em; */
 }
 #button .join-now {
 	font-family: Lato, sans-serif;
@@ -212,6 +232,8 @@ h2, h3 {
 	padding: 12px;
 	background-color: #0b758f;
 	border-radius: 25px;
+	position: relative;
+	top: 50px;
 }
 #button a:hover {
 	background-color: #00647d
