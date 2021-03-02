@@ -4,8 +4,8 @@
 
 <html lang="en" id="top-of-site">
 	<head>
-		<title>404 | RiP Central</title>
-		<link rel="stylesheet" type="text/css" href="./Resources/CSS/404-style.css">
+		<title>Appeal | RiP Central</title>
+		<link rel="stylesheet" type="text/css" href="./Resources/CSS/appeal-style.css">
 		<link rel="icon" type="image/icon" href="./Resources/Icon.png">
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=G-09543QGL8J"></script>
@@ -43,16 +43,35 @@
 				</ul>
 			</nav>
 			<header>
-				<h1>Oops! Something is broken.</h1>
+				<h1>RiP Central</h1>
 			</header>
 			<main>
-				<p id="error-code">404</p>
-				<p id="message">Sorry, we cannot find the page you're looking for. It might have been removed or it's unavailable</p>
-				<p id="go-back"><a href="index.html">Cick here to go back</a></p>
+				<h2>Appeal Form</h2>
+				<p>Some basic information so we know who's appealing. Please keep this section short.</p>
+				<section id="appeal-form">
+					<form action="https://formspree.io/f/mknpljve" method="post">
+						<label for="DiscordTag">Discord Tag</label>
+						<input type="text" name="DiscordTag" id="DiscordTag" placeholder="Example#1234" required>
+
+						<label for="DiscordAccountID">Discord Account ID</label>
+						<input type="text" name="DiscordAccountID" id="DiscordAccountID" placeholder="Optional">
+
+						<label for="EmailAddress">Email Address</label>
+						<input type="email" name="EmailAddress" id="EmailAddress" placeholder="example@mail.com" required>
+
+						<label for="WhyDidYouGetPunished">Why did you get punished?</label>
+						<textarea id="WhyDidYouGetPunished" placeholder="Write Something..." name="WhyDidYouGetPunished" required></textarea>
+
+						<label for="WhatWillYouDo">What will you do if we accept your appeal?</label>
+						<textarea id="WhatWillYouDo" name="WhatWillYouDo" placeholder=" Write Something... | If we'll have to ban/mute you again, you won't be able to appeal so be careful!" required></textarea>
+
+						<label for="StaffMember">The Staff Member's Username</label>
+						<input type="text" id="StaffMember" name="StaffMember" placeholder="Optional">
+
+						<input type="submit" value="Submit">
+						<input type="reset" value="Reset">
+					</form>
+				</section>
 			</main>
-			<footer class="copyright">
-			<p>&copy; 2020 - 2021 RiP Central</p>
-			</footer>
 		</div>
 	</body>
-</html>

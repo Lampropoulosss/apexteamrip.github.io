@@ -8,25 +8,49 @@
 	font-family: Lato;
 	src: url(../Fonts/Lato/Lato-Regular.ttf);
 }
-* {
+ol, ul {
   margin: 0;
   padding: 0;
 }
-.not-ready {
-	display: none;
+body {
+	font-family: Arial, sans-serif;
+	background-color: #1a1a1a;
+	color: white;
+	max-width: 2000px;
 }
-/* #border {
-	border-width: 3px;
+header {
+	font-family: Truculenta;
+	color: white;
+	font-size: 36px;
+	text-align: center;
+}
+h2 {
+	text-align: center;
+	font-family: Truculenta;
+	font-size: 250%;
+}
+h2+p {
+	text-align: center;
+	font-size: 1.2em;
+}
+#appeal-form {
+	padding: 0 10px;
+}
+#border {
 	border-style: solid;
 	border-color: #0b758f;
-	border-radius: 5px;
-} */
+	border-width: 3px;
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
 #navigation li {
 	display: inline-block;
 }
 #navigation ul {
 	margin-bottom: 16px;
-	margin-top: 16px;
+	padding-left: 40px;
 }
 #navigation a {
 	font-family: Lato, sans-serif;
@@ -34,46 +58,27 @@
 	font-size: 20px;
 	color: white;
 	padding: 5px;
-	margin-right: 5px;
+	margin-right: 10px;
 	background-color: #0b758f; /* a279ed */
 	border-radius: 15px;
 }
 @media only screen and (max-width: 537px) {
-	/* #navigation li {
-		margin-top: 15px; 
-	} */
-	#navigation ul {
-		padding-left: 20px;
+	#navigation li {
+		margin-top: 15px;
 	}
 }
 @media only screen and (min-width: 538px) {
 	#navigation ul {
-	padding-left: 40px;
+		margin-top: 16px;
 	}
 }
 #navigation {
-	position: fixed;
-	top: 0;
-	width: 100%;
 	padding: 5px;
 	background-color: black;
 	max-width: 1990px; 
 }
-#navigation a:hover {
+#navigation a:hover, input[type=submit]:hover, input[type=reset]:hover {
 	background-color: #00647d;
-}
-header {
-	margin-top: 11%;
-	margin-bottom: 5.4%;
-	font-family: Truculenta;
-	font-size: 40px;
-	text-align: center;
-}
-body {
-	background-color: #1a1a1a;
-	color: white;
-	font-family: Arial, sans-serif;
-	max-width: 2000px;
 }
 input[type=text], input[type=email], textarea {
   width: 100%;
@@ -84,12 +89,11 @@ input[type=text], input[type=email], textarea {
   margin-top: 6px;
   margin-bottom: 16px;
   resize: none;
+  transition: 0.5s;
 }
-#contact-form {
-	margin: 0 10px;
-}
-textarea {
-	height: 200px;
+input:focus, select:focus, textarea:focus {
+	background-color: lightblue;
+	transition: 0.5s;
 }
 input[type=submit], input[type=reset] {
   background-color: #0b758f;
@@ -101,16 +105,6 @@ input[type=submit], input[type=reset] {
   font-family: Lato;
   margin-bottom: 20px;
 }
-input[type=submit]:hover, input[type=reset]:hover {
-	background-color: #00647d;
-}
-input:focus, select:focus, textarea:focus {
-	background-color: lightblue;
-	transition: 0.5s;
-}
-.copyright {
-	font-size: 12px;
-}
-.copyright p {
-	margin: 1.4% 5px;
+textarea {
+	height: 200px;
 }

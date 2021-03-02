@@ -167,7 +167,7 @@ textarea {
 	background-color: black;
 	max-width: 1990px; 
 }
-#navigation a:hover {
+#navigation a:hover, input[type=submit]:hover, input[type=reset]:hover {
 	background-color: #00647d;
 }
 .copyright {

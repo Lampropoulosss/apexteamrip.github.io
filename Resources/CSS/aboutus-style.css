@@ -8,22 +8,22 @@
 	font-family: Lato;
 	src: url(../Fonts/Lato/Lato-Regular.ttf);
 }
-ol, ul {
+* {
   margin: 0;
   padding: 0;
 }
-#border {
+/* #border {
 	border-width: 3px;
 	border-style: solid;
 	border-color: #0b758f;
 	border-radius: 5px;
-}
+} */
 #navigation li {
 	display: inline-block;
 }
 #navigation ul {
 	margin-bottom: 16px;
-	padding-left: 40px;
+	margin-top: 16px;
 }
 #navigation a {
 	font-family: Lato, sans-serif;
@@ -31,21 +31,37 @@ ol, ul {
 	font-size: 20px;
 	color: white;
 	padding: 5px;
-	margin-right: 10px;
+	margin-right: 5px;
 	background-color: #0b758f; /* a279ed */
 	border-radius: 15px;
 }
 @media only screen and (max-width: 537px) {
-	#navigation li {
-		margin-top: 15px;
+	/* #navigation li {
+		margin-top: 15px; 
+	} */
+	#navigation ul {
+		padding-left: 20px;
 	}
 }
 @media only screen and (min-width: 538px) {
 	#navigation ul {
-		margin-top: 16px;
+	padding-left: 40px;
 	}
 }
+/* @media only screen and (max-width: 505px) {
+	header {
+		margin-top: 20%;
+	}
+}
+@media only screen and (min-width: 506px) {
+	header {
+		margin-top: 10%;
+	}
+} */
 #navigation {
+	position: fixed;
+	width: 100%;
+	top: 0;
 	padding: 5px;
 	background-color: black;
 	max-width: 1990px;
@@ -54,6 +70,8 @@ ol, ul {
 	background-color: #00647d;
 }
 header {
+	margin-top: 11%;
+	margin-bottom: 5.4%;
 	font-family: Truculenta;
 	font-size: 36px;
 	text-align: center;
@@ -71,6 +89,7 @@ h2 {
 	font-family: Truculenta;
 	font-size: 250%;
 	text-align: center;
+	margin: 3.8% 0;
 }
 h3 {
 	font-family: Truculenta;
@@ -86,6 +105,12 @@ h3 {
 	margin-bottom: 25px;
 	font-size: 1.3em;
 	text-align: center;
+}
+#description p {
+	margin: 5.2% 0;
+}
+h2+p {
+	margin: 2.4% 0;
 }
 @media only screen and (min-width: 770px) {
 	td {
@@ -115,9 +140,8 @@ th, td {
 #jobs p {
 	text-align: center;
 	font-size: 1.3em;
-}
-.copyright {
-	font-size: 12px;
+	margin: 2.4% 0;
+	padding: 0 1%;
 }
 td:hover {
 	background-color: #292929;
@@ -144,6 +168,10 @@ th:hover {
 	padding-bottom: 28px;
 	width: auto;
 	background-color: #1a1a1a;
+	border-bottom: solid #0b758f;
+}
+#staff-devs h3 {
+	margin: 3.3% 0;
 }
 #admins h3, #social h3 {
 	margin-top: 0;
@@ -151,4 +179,10 @@ th:hover {
 }
 #admins:hover, #staff-devs:hover, #social:hover {
 	background-color: #292929;
+}
+.copyright {
+	font-size: 12px;
+}
+.copyright p {
+	margin: 1.4% 5px;
 }

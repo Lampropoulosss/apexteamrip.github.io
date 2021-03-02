@@ -4,7 +4,7 @@
 	font-family: Lato;
 	src: url(../Fonts/Lato/Lato-Regular.ttf);
 }
-ol, ul {
+* {
   margin: 0;
   padding: 0;
 }
@@ -14,7 +14,7 @@ body {
 	color: white;
 	max-width: 1990px;
 }
-#border {
+/* #border {
 	border-style: solid;
 	border-color: #0b758f;
 	border-width: 3px;
@@ -22,13 +22,13 @@ body {
 	border-top-left-radius: 5px;
 	border-bottom-left-radius: 10px;
 	border-bottom-right-radius: 10px;
-}
+} */
 #navigation li {
 	display: inline-block;
 }
 #navigation ul {
 	margin-bottom: 16px;
-	padding-left: 40px;
+	margin-top: 16px;
 }
 #navigation a {
 	font-family: Lato, sans-serif;
@@ -36,21 +36,27 @@ body {
 	font-size: 20px;
 	color: white;
 	padding: 5px;
-	margin-right: 10px;
+	margin-right: 5px;
 	background-color: #0b758f; /* a279ed */
 	border-radius: 15px;
 }
 @media only screen and (max-width: 537px) {
-	#navigation li {
-		margin-top: 15px;
+	/* #navigation li {
+		margin-top: 15px; 
+	} */
+	#navigation ul {
+		padding-left: 20px;
 	}
 }
 @media only screen and (min-width: 538px) {
 	#navigation ul {
-		margin-top: 16px;
+	padding-left: 40px;
 	}
 }
 #navigation {
+	position: fixed;
+	width: 100%;
+	top: 0;
 	padding: 5px;
 	background-color: black;
 	max-width: 1990px; 
@@ -58,7 +64,18 @@ body {
 #navigation a:hover, #go-back a:hover {
 	background-color: #00647d;
 }
+@media only screen and (min-width:555px) {
+	header {
+		margin-top: 12%;
+	}
+}
+@media only screen and (max-width: 556px) {
+	header {
+		margin-top: 15%;
+	}
+}
 header {
+	margin-bottom: 5.4%;
 	text-align: center;
 	font-size: 1.3em;
 }
@@ -70,7 +87,7 @@ header {
 	text-align: center;
 }
 #go-back {
-	margin-left: 15px;
+	margin-top: 50px;
 	text-align: center;
 
 }
@@ -84,5 +101,7 @@ header {
 }
 .copyright {
 	font-size: 12px;
-	margin-left: 10px;
+}
+.copyright p {
+	margin: 1.4% 5px;
 }
