@@ -26,28 +26,6 @@ header {
 	font-size: 36px;
 	text-align: center;
 }
-h2 {
-	margin: 4% 0;
-	text-align: center;
-	font-family: Truculenta;
-	font-size: 250%;
-}
-h2+p {
-	text-align: center;
-	font-size: 1.2em;
-}
-#appeal-form {
-	padding: 0 10px;
-}
-/* #border {
-	border-style: solid;
-	border-color: #0b758f;
-	border-width: 3px;
-	border-top-right-radius: 5px;
-	border-top-left-radius: 5px;
-	border-bottom-left-radius: 10px;
-	border-bottom-right-radius: 10px;
-} */
 #navigation li {
 	display: inline-block;
 }
@@ -86,10 +64,13 @@ h2+p {
 	background-color: black;
 	max-width: 1990px; 
 }
-#navigation a:hover, input[type=submit]:hover, input[type=reset]:hover {
+#navigation a:hover, button:hover {
 	background-color: #00647d;
 }
-input[type=text], input[type=email], textarea {
+main {
+	padding: 0 10px;
+}
+input {
   width: 100%;
   padding: 12px;
   border: 2px solid #0b758f;
@@ -100,11 +81,11 @@ input[type=text], input[type=email], textarea {
   resize: none;
   transition: 0.5s;
 }
-input:focus, select:focus, textarea:focus {
+input:focus {
 	background-color: lightblue;
 	transition: 0.5s;
 }
-input[type=submit], input[type=reset] {
+button {
   background-color: #0b758f;
   color: white;
   padding: 12px 20px;
@@ -114,8 +95,12 @@ input[type=submit], input[type=reset] {
   font-family: Lato;
   margin-bottom: 20px;
 }
-textarea {
-	height: 200px;
+h3{
+	margin: 2% 0;
+}
+hr {
+	width: 98%;
+	margin: 0 auto;
 }
 .copyright {
 	font-size: 12px;

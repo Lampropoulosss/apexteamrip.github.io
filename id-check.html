@@ -4,8 +4,8 @@
 
 <html lang="en" id="top-of-site">
 	<head>
-		<title>Appeal | RiP Central</title>
-		<link rel="stylesheet" type="text/css" href="./Resources/CSS/appeal-style.css">
+		<title>Discord ID Checker | RiP Central</title>
+		<link rel="stylesheet" type="text/css" href="./Resources/CSS/id-check-style.css">
 		<link rel="icon" type="image/icon" href="./Resources/Icon.png">
 		<!-- Global site tag (gtag.js) - Google Analytics -->
 		<script async src="https://www.googletagmanager.com/gtag/js?id=G-09543QGL8J"></script>
@@ -30,6 +30,9 @@
 			content="no-cache">
 		<meta http-equiv="expires"
 			content="Wed, 30 Jun 2021 23:59:59 GMT">
+		<script src="Resources/JavaScript/id-checker.js"></script> 
+		<script src="Resources/Javascript/moment.min.js"></script>
+    	<script src="Resources/Javascript/moment-timezone-with-data-10-year-range.min.js"></script>
 	</head>
 	<body>
 		<div id="border">
@@ -46,35 +49,23 @@
 				<h1>RiP Central</h1>
 			</header>
 			<main>
-				<h2>Appeal Form</h2>
-				<p>Some basic information so we know who's appealing. Please keep this section short.</p>
-				<section id="appeal-form">
-					<form action="https://formspree.io/f/mknpljve" method="post">
-						<label for="DiscordTag">Discord Tag</label>
-						<input type="text" name="DiscordTag" id="DiscordTag" placeholder="Example#1234" required>
+				<label for="i-id">Discord ID</label>
+				<input type="text" name="discordid" placeholder="459847490782312982" id="i-id">
 
-						<label for="DiscordAccountID">Discord Account ID</label>
-						<input type="text" name="DiscordAccountID" id="DiscordAccountID" placeholder="Optional">
-
-						<label for="EmailAddress">Email Address</label>
-						<input type="email" name="EmailAddress" id="EmailAddress" placeholder="example@mail.com" required>
-
-						<label for="WhyDidYouGetPunished">Why did you get punished?</label>
-						<textarea id="WhyDidYouGetPunished" placeholder="Write Something..." name="WhyDidYouGetPunished" required></textarea>
-
-						<label for="WhatWillYouDo">What will you do if we accept your appeal?</label>
-						<textarea id="WhatWillYouDo" name="WhatWillYouDo" placeholder=" Write Something... | If we'll have to ban/mute you again, you won't be able to appeal so be careful!" required></textarea>
-
-						<label for="StaffMember">The Staff Member's Username</label>
-						<input type="text" id="StaffMember" name="StaffMember" placeholder="Optional">
-
-						<input type="submit" value="Submit">
-						<input type="reset" value="Reset">
-					</form>
-				</section>
+			    <button type="button" onclick="convert(document.getElementById('i-id').value)">Check the date!</button>
+			    <br>
+				<br>
+			    <hr>
+				<h3>Result:</h3>
+				<strong>Creation Date(24H format): </strong><span id="i-date24"></span><br>
+				<strong>Creation Date(12H format): </strong><span id="i-date12"></span><br>
+				<strong>Your timezone: </strong><span id="i-timezone"></span><br>
+				<strong>Time ago: </strong><span id="i-timeago"></span><br>
+				<strong>Unix timestamp: </strong><span id="i-timestamp"></span><br>
 			</main>
 		</div>
 		<footer class="copyright">
 			<p>&copy; 2020 - 2021 RiP Central</p>
 		</footer>
 	</body>
+</html>
