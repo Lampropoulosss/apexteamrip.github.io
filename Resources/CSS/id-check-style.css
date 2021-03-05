@@ -108,3 +108,6 @@ hr {
 .copyright p {
 	margin: 1.4% 5px;
 }
+.copyright a {
+	color: white;
+}
