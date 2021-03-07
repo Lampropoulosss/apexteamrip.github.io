@@ -67,6 +67,9 @@ header {
 #navigation a:hover, button:hover {
 	background-color: #00647d;
 }
+#navigation a:active, button:active {
+	background-color: #005c5c;
+}
 main {
 	padding: 0 10px;
 }

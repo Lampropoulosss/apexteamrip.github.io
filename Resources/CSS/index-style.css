@@ -57,6 +57,9 @@
 #navigation a:hover {
 	background-color: #00647d;
 }
+#navigation a:active {
+	background-color: #005c5c;
+}
 header {
 	background: url(../OfficialLogo.jpg);
 	background-repeat: no-repeat;
@@ -247,7 +250,10 @@ h2, h3 {
 	top: 50px;
 }
 #button a:hover {
-	background-color: #00647d
+	background-color: #00647d;
+}
+#button a:active {
+	background-color: #005c5c;
 }
 .copyright {
 	font-size: 12px;
